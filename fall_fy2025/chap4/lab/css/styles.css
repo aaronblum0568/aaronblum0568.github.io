@@ -111,6 +111,10 @@ main p {
 
 .map {
     border: 5px solid #373684;
+    /* Moved from inline attribures */
+    width: 600px;
+    height: 450px;
+    border: 0px;
 }
 
 /* Style rules for footer content */
