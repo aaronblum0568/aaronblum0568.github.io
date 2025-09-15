@@ -1,0 +1,66 @@
+/*
+Author: Aaron Blum
+Date: 9/14/25
+File Name: fanbool.css
+*/
+
+/* CSS Reset */
+body,
+header,
+nav,
+main,
+footer,
+img,
+h1 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Personal customization */
+body {
+    background-image: url(/images/bg-footballs.png);
+    color: #013369;
+    font-family: Montserrat, sans-serif
+}
+
+/* Style rules for header content */
+header {
+    text-align: center;
+}
+
+/* Style rules for navigation area */
+nav {
+    display: inline-block;
+    color: #013369;
+    font-size: 1em;
+    text-align: center;
+}
+
+nav a {
+    font-size: 1.5em;
+    padding: 0.25em 0.25em;
+    text-decoration: none;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    overflow: auto;
+    font-size: 1.2em;
+}
+
+main #game h2 {
+    font-style: italic;
+}
+
+main #game h4 {
+    color: #d50a0a;
+}
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.75em;
+    clear: left;
+}
