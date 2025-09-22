@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/fanbool.css">
     <title>FanBool</title>
 </head>
@@ -13,16 +14,18 @@
             <img src="./images/logo.svg" alt="FB logo with B backward followed by FanBool" width="315" height="70">
         </div>
         <nav>
-            <a href="#">Home</a> 🏈
-            <a href="#about">About</a> 🏈
-            <a href="#contact">Contact</a> 🏈
-            <a href="./fall_fy2025/">Fall FY2025</a>
+            <ul>
+                <li><a href="#">Home</a><span class="desktop">🏈</span></li>
+                <li class="desktop"><a href="#about">About</a><span class="desktop">🏈</span></li>
+                <li><a href="#contact">Contact</a><span class="desktop">🏈</span></li>
+                <li><a href="./fall_fy2025/">Fall FY2025</a></li>
+            </ul>
         </nav>
     </header>
 
     <!-- Main Content -->
     <main>
-        <section id="home">
+        <section id="about" class="desktop">
             <h1>Welcome to Fan Bool!</h1>
             <p>A fun website dedicated to football fan predictions. By Aaron Blum.</p>
         </section>
@@ -63,15 +66,11 @@
                 <li>dragonsinth: 42 pts (sample)</li>
             </ol>
         </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>support@fanbool.com</p>
-        </section>
     </main>
 
     <!-- Footer -->
     <footer>
+        <p id="contact"><a href="mailto:googolpup@gmail.com">support@fanbool.com</a></p>
         <p>&copy; 2025 FanBool by Aaron Blum. All rights reserved.</p>
     </footer>
 

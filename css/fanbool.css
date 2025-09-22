@@ -29,6 +29,17 @@ header {
     text-align: center;
 }
 
+/* Style rules for mobile viewport */
+
+/* Show mobile class, hide desktop class */
+.mobile {
+    display: block;
+}
+
+.desktop {
+    display: none;
+}
+
 /* Style rules for navigation area */
 nav {
     display: inline-block;
@@ -37,9 +48,27 @@ nav {
     text-align: center;
 }
 
+nav ul {
+    list-style-type: none;
+}
+
+/* TODO: desktop rules! */
+ 
+/* desktop should show nav horizontally
+nav li {
+    display: inline-block;
+}
+*/
+
+/* desktop should show on desktop
+.desktop {
+    display: none;
+}
+*/
+
 nav a {
-    font-size: 1.5em;
-    padding: 0.25em 0.25em;
+    font-size: 2em;
+    padding: 0em 0.25em;
     text-decoration: none;
 }
 
@@ -63,4 +92,9 @@ footer {
     text-align: center;
     font-size: 0.75em;
     clear: left;
+}
+
+footer a {
+    color: #4645a8;
+    text-decoration: none;
 }
