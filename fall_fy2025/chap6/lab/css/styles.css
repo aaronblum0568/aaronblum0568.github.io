@@ -238,9 +238,15 @@ print {
 }
 
 /* Media Query for Print */
-@media screen and (print) {
+@media print {
     body {
         color: #fff;
         background-color: #000;
+    }
+
+    /* Make nav look good in print format as suggested in chapter 6. */
+    nav li a {
+        font-size: 0.5em;
+        color: #000;
     }
 }
