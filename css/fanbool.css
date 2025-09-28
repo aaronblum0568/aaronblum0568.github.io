@@ -11,25 +11,68 @@ nav,
 main,
 footer,
 img,
-h1 {
+ul,
+ol {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-/* Personal customization */
+/* Style rules for body and images */
 body {
-    background-image: url(/images/bg-footballs.png);
-    color: #013369;
+    background-color: #222;
     font-family: Montserrat, sans-serif
 }
 
-/* Style rules for header content */
-header {
-    text-align: center;
+img {
+    max-width: 100%;
+    display: block;
 }
 
 /* Style rules for mobile viewport */
+
+/* Style rules for header */
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: #222;
+    top: 0;
+    z-index: 10;
+}
+
+header img {
+    margin: 0 auto;
+    max-width: 315px;
+    min-height: 70px;
+}
+
+/* Style rules for navigation area */
+nav {
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    font-size: 1.5em;
+    border-top: 1px solid #fff;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    padding: 0.25em;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: #222;
+    background-color: #fff;
+}
 
 /* Show mobile class, hide desktop class */
 .mobile {
@@ -40,43 +83,18 @@ header {
     display: none;
 }
 
-/* Style rules for navigation area */
-nav {
-    display: inline-block;
-    color: #013369;
-    font-size: 1em;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-/* TODO: desktop rules! */
- 
-/* desktop should show nav horizontally
-nav li {
-    display: inline-block;
-}
-*/
-
-/* desktop should show on desktop
-.desktop {
-    display: none;
-}
-*/
-
-nav a {
-    font-size: 2em;
-    padding: 0em 0.25em;
-    text-decoration: none;
-}
-
 /* Style rules for main content */
 main {
+    background-image: url(/images/bg-footballs.png);
+    color: #013369;
     padding: 2%;
-    overflow: auto;
     font-size: 1.2em;
+}
+
+/* undo CSS reset on main ul/ol */
+main ul,
+ol {
+    padding-left: 40px;
 }
 
 main #game h2 {
@@ -87,14 +105,171 @@ main #game h4 {
     color: #d50a0a;
 }
 
-/* Style rules for footer content */
-footer {
-    text-align: center;
-    font-size: 0.75em;
-    clear: left;
+main #leaderboard {
+    background-color: #013369;
+    color: #d50a0a;
+    padding: 1em;
 }
 
-footer a {
-    color: #4645a8;
+main #leaderboard h2 {
+    padding: 0.2em;
+    margin: 0.2em;
+}
+
+/* Style rules for footer content */
+footer {
+    background-color: #222;
+}
+
+/* Style rules for footer content */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 150px;
+}
+
+.footer-col h4 {
+    margin-bottom: 10px;
+}
+
+.footer-col a {
+    color: #ccc;
     text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer-col a:hover {
+    color: #fff;
+}
+
+.footer-col a i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.footer-col a i:hover {
+    color: #fff;
+}
+
+.social_icon span a {
+    display: inline-block;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px),
+print {
+
+    /* Tablet viewport: show desktop class, hide mobile class */
+    .desktop {
+        display: block;
+    }
+
+    span.desktop {
+        display: inline;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    /* Tablet Viewport: Style rules for nav area */
+    nav li {
+        border-top: none;
+        display: inline-block;
+        border-right: 1px solid #fff;
+    }
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    nav li a {
+        padding: 0.1em 0.75em;
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px),
+print {
+
+    /* Desktop Viewport: Style rule for header */
+    header {
+        width: 315px;
+        float: left;
+    }
+
+    /* Desktop Viewport: Style rules for nav area */
+    nav {
+        float: right;
+        margin: 0;
+    }
+
+    nav li {
+        border: none;
+        /* bigger */
+        font-size: 2em;
+    }
+
+    main {
+        clear: left;
+    }
+
+    main #game {
+        float: left;
+        width: 60%;
+    }
+
+    main #leaderboard {
+        float: right;
+        width: 30%;
+        min-height: 20em;
+    }
+
+    main #end {
+        clear: left;
+    }
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
+
+    body {
+        width: 1920px;
+        margin: 0 auto;
+    }
+}
+
+/* Media Query for Print */
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+
+    nav li {
+        font-size: 1.5em;
+    }
+
+    nav li a {
+        padding: 0.5em;
+    }
+
+    footer {
+        display: none;
+    }
 }
