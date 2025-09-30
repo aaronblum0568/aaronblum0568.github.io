@@ -37,7 +37,6 @@ header {
     position: sticky;
     background-color: #222;
     top: 0;
-    z-index: 10;
 }
 
 header img {
@@ -175,6 +174,7 @@ footer {
 print {
 
     /* Tablet viewport: show desktop class, hide mobile class */
+    /* TODO: maybe explicit .tab-desk rules here instead of only desktop? */
     .desktop {
         display: block;
     }
