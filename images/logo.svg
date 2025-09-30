@@ -1,12 +1,12 @@
 <svg viewBox="0 0 315 70" xmlns="http://www.w3.org/2000/svg">
     <text x="5" y="60" font-family="Montserrat, sans-serif" font-size="70" font-weight="900"
-        style="fill: #d50a0a;">F</text>
+        style="fill: #d50a0a; stroke: white; stroke-width: 2.5;">F</text>
     <text x="-90" y="60" font-family="Montserrat, sans-serif" font-size="70" font-weight="900"
-        style="fill: #013369; transform: scale(-1, 1);">B</text>
+        style="fill: #013369; stroke: white; stroke-width: 2.5; transform: scale(-1, 1);">B</text>
     <line x1="95" y1="10" x2="95" y2="60" stroke-width="4" stroke-linecap="round"
         style="stroke: #d1d5db;" />
     <text x="100" y="55" font-family="Montserrat, sans-serif" font-size="55" font-weight="700"
-        style="fill: #d50a0a; letter-spacing: -3px;">Fan</text>
+        style="fill: #d50a0a; letter-spacing: -3px; stroke: white; stroke-width: 2;">Fan</text>
     <text x="195" y="55" font-family="Montserrat, sans-serif" font-size="55" font-weight="700"
-        style="fill: #013369; letter-spacing: -3px;">Bool</text>
+        style="fill: #013369; letter-spacing: -3px; stroke: white; stroke-width: 2;">Bool</text>
 </svg>
