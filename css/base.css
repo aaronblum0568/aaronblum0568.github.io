@@ -61,12 +61,32 @@ nav li {
     font-size: 1em;
 }
 
-nav li a {
+nav a {
     display: block;
     color: #cdf;
     text-align: center;
     padding: 0.25em 0.5em;
     text-decoration: none;
+    white-space: nowrap;
+}
+
+nav a:hover {
+    color: #111;
+    background-color: #cdf;
+}
+
+/* General nav dropdown rules. */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #111;
+    width: 11rem;
+    padding-bottom: 0.5rem;
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    border-top: 1px solid #fff;
 }
 
 /* Style rules for main content */
@@ -130,4 +150,91 @@ footer {
 
 .social_icon span a {
     display: inline-block;
+}
+
+/* Media Query for Mobile Viewport */
+@media screen and (max-width: 630px),
+print {
+
+    /* Show mobile class, hide desktop class */
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    /* Float hamburger to the right of title */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    /* Smaller header */
+    header h1 {
+        font-size: 1.2em;
+        padding: 1rem;
+    }
+
+    nav {
+        padding: 1rem;
+    }
+
+    /* Hamburger rules */
+    #menu-toggle {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .hamburger div {
+        width: 25px;
+        height: 3px;
+        background-color: #FFF;
+        margin: 4px 0;
+    }
+
+    /* Hamburger dropdown positon under hamburger. */
+    .dropdown-content {
+        right: 0px;
+        padding-top: 1.6rem;
+    }
+
+    /* Crazy rule to show dropdown. */
+    #menu-toggle:checked+.hamburger+.dropdown-content {
+        display: block;
+    }
+}
+
+/* Media Query for Tablet/Desktop Viewport */
+@media screen and (min-width: 631px),
+print {
+
+    /* Show desktop class, hide mobile class */
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    /* Style rules for Chapters dropdown on desktop */
+    .dropdown {
+        position: relative;
+        /* Same width as content below it. */
+        width: 11rem;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
 }
