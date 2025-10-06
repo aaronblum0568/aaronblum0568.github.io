@@ -13,13 +13,28 @@
 <body>
     <header>
         <h1>Chapter 1</h1>
-        <nav>
+        <nav class="mobile">
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <div class="dropdown-content">
+                <a href="/fall_fy2025/">Home</a>
+                <a href="./classwork/">Classwork</a>
+                <a href="./homework/">Homework</a>
+                <a href="./lab/">Lab</a>
+                <a href="./notes/">Notes</a>
+            </div>
+        </nav>
+        <nav class="desktop">
             <ul>
-                <li><a href="/fall_fy2025/">Fall FY2025</a></li>
-                <li><a href="./classwork/">classwork</a></li>
-                <li><a href="./homework/">homework</a></li>
-                <li><a href="./lab/">lab</a></li>
-                <li><a href="./notes/">notes</a></li>
+                <li><a href="/fall_fy2025/">Home</a></li>
+                <li><a href="./classwork/">Classwork</a></li>
+                <li><a href="./homework/">Homework</a></li>
+                <li><a href="./lab/">Lab</a></li>
+                <li><a href="./notes/">Notes</a></li>
             </ul>
         </nav>
     </header>
@@ -47,14 +62,17 @@
             <div class="footer-col">
                 <h4>Resources</h4>
                 <a href="https://web.dev/learn/css/box-model" target="_blank">Box Model</a><br>
-                <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/" target="_blank">Responsive Web Design</a>
+                <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/" target="_blank">Responsive Web
+                    Design</a>
             </div>
             <div class="footer-col social_icon">
                 <h4>Follow Me</h4>
                 <span>
-                    <a href="https://www.facebook.com/aaron.blum.7509" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/aaron.blum.7509" target="_blank"><i
+                            class="fab fa-facebook"></i></a>
                     <a href="https://github.com/aaronblum0568/" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/aaron-blum-b38143386/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/aaron-blum-b38143386/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
                 </span>
             </div>
         </div>
