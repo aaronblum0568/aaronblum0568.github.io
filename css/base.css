@@ -50,19 +50,7 @@ nav {
     background-color: #111;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    text-align: center;
-}
-
-nav li {
-    display: inline-block;
-    font-size: 1em;
-}
-
 nav a {
-    display: block;
     color: #cdf;
     text-align: center;
     padding: 0.25em 0.5em;
@@ -70,23 +58,22 @@ nav a {
     white-space: nowrap;
 }
 
-nav a:hover {
-    color: #111;
-    background-color: #cdf;
-}
-
-/* General nav dropdown rules. */
-.dropdown-content {
+/* Hamburger rules */
+#menu-toggle {
     display: none;
-    position: absolute;
-    background-color: #111;
-    width: 7.5em;
-    padding-bottom: 0.5rem;
-    z-index: 1000;
 }
 
-.dropdown-content a {
-    border-top: 1px solid #fff;
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #FFF;
+    margin: 4px 0;
 }
 
 /* Style rules for main content */
@@ -184,32 +171,25 @@ print {
         padding: 1rem;
     }
 
-    /* Hamburger rules */
-    #menu-toggle {
-        display: none;
-    }
-
-    .hamburger {
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-    }
-
-    .hamburger div {
-        width: 25px;
-        height: 3px;
-        background-color: #FFF;
-        margin: 4px 0;
+    nav a {
+        display: block;
+        border-top: 1px solid #fff;
     }
 
     /* Hamburger dropdown positon under hamburger. */
-    .dropdown-content {
+    #hamburger-content {
+        display: none;
+        position: absolute;
         right: 0px;
+        background-color: #111;
+        width: 7.5em;
         padding-top: 1.6rem;
+        padding-bottom: 0.25rem;
+        z-index: 1000;
     }
 
-    /* Crazy rule to show dropdown. */
-    #menu-toggle:checked+.hamburger+.dropdown-content {
+    /* Crazy rule to show hambuger dropdown. */
+    #menu-toggle:checked+.hamburger+#hamburger-content {
         display: block;
     }
 }
@@ -227,14 +207,59 @@ print {
         display: block;
     }
 
-    /* Style rules for Chapters dropdown on desktop */
-    .dropdown {
-        position: relative;
-        /* Same width as content below it. */
-        width: 7.5em;
+    .hamburger {
+        display: none;
     }
 
-    .dropdown:hover .dropdown-content {
+    #hambuger-content {
         display: block;
+    }
+
+    nav a {
+        display: inline-block;
+        border-left: 1px solid #fff;
+    }
+
+    nav a:first-child {
+        border-left: none;
+    }
+
+    nav a:hover {
+        color: #111;
+        background-color: #cdf;
+    }
+
+    /* Style rules for Chapters dropdown on desktop */
+    #chapters {
+        position: relative;
+    }
+
+    /* Special rules for the Chapter header. */
+    #chapters>a {
+        display: inline-block;
+        /* Same width as content below it. */
+        width: 7.5em;
+        padding: 0.25em 0;
+        border-left: solid 1px #cdf;
+    }
+
+    #chapters-content {
+        display: none;
+        position: absolute;
+        left: 0;
+        background-color: #111;
+        width: 7.5em;
+        padding-bottom: 0.25rem;
+        z-index: 1000;
+    }
+
+    #chapters:hover #chapters-content {
+        display: block;
+    }
+
+    #chapters-content a {
+        display: block;
+        border-left: none;
+        border-top: 1px solid #fff;
     }
 }
