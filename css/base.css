@@ -50,6 +50,14 @@ nav {
     background-color: #111;
 }
 
+nav a {
+    color: #cdf;
+    text-align: center;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
 /* Hamburger rules */
 #menu-toggle {
     display: none;
@@ -165,12 +173,7 @@ print {
 
     nav a {
         display: block;
-        color: #cdf;
         border-top: 1px solid #fff;
-        text-align: center;
-        padding: 0.25em 0.5em;
-        text-decoration: none;
-        white-space: nowrap;
     }
 
     /* Hamburger dropdown positon under hamburger. */
@@ -181,7 +184,7 @@ print {
         background-color: #111;
         width: 7.5em;
         padding-top: 1.6rem;
-        padding-bottom: 0.5rem;
+        padding-bottom: 0.25rem;
         z-index: 1000;
     }
 
@@ -214,11 +217,6 @@ print {
 
     nav a {
         display: inline-block;
-        color: #cdf;
-        text-align: center;
-        padding: 0.25em 0.5em;
-        text-decoration: none;
-        white-space: nowrap;
         border-left: 1px solid #fff;
     }
 
@@ -236,7 +234,8 @@ print {
         position: relative;
     }
 
-    #chapters > a {
+    /* Special rules for the Chapter header. */
+    #chapters>a {
         display: inline-block;
         /* Same width as content below it. */
         width: 7.5em;
@@ -250,7 +249,7 @@ print {
         left: 0;
         background-color: #111;
         width: 7.5em;
-        padding-bottom: 0.5rem;
+        padding-bottom: 0.25rem;
         z-index: 1000;
     }
 
@@ -260,7 +259,6 @@ print {
 
     #chapters-content a {
         display: block;
-        text-align: center;
         border-left: none;
         border-top: 1px solid #fff;
     }
