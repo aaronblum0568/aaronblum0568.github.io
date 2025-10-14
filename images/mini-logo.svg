@@ -1,0 +1,6 @@
+<svg viewBox="0 0 95 70" xmlns="http://www.w3.org/2000/svg">
+    <text x="5" y="60" font-family="Montserrat, sans-serif" font-size="70" font-weight="900"
+        style="fill: #d50a0a; stroke: white; stroke-width: 2.5;">F</text>
+    <text x="-90" y="60" font-family="Montserrat, sans-serif" font-size="70" font-weight="900"
+        style="fill: #013369; stroke: white; stroke-width: 2.5; transform: scale(-1, 1);">B</text>
+</svg>
