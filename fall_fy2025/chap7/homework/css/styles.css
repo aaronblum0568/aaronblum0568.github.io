@@ -22,7 +22,7 @@ img {
 }
 
 /* Style rule for box sizing applies to all elements */
-*{
+* {
     box-sizing: border-box;
 }
 
