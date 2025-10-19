@@ -18,43 +18,28 @@ h1 {
 }
 
 body {
-    background-image: url(/fall_fy2025/images/simon-berger-twukN12EN7c-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     font-family: Verdana, Arial, sans-serif;
-}
-
-.about {
-    height: 80vh;
-}
-
-.contact {
-    height: 80vh;
+    color: #cdf;
+    background-color: #222;
 }
 
 /* Style rules for header content */
 header {
     text-align: center;
     font-size: 1.5em;
-    color: #44f;
-    background-color: #111;
 }
 
 header h1 {
+    color: #44f;
     font-weight: bold;
 }
 
 /* Style rules for navigation area */
-nav {
-    background-color: #111;
-}
-
 nav a {
     color: #cdf;
     text-align: center;
-    padding: 0.25em 0.5em;
     text-decoration: none;
+    padding: 0.25em 0.5em;
     white-space: nowrap;
 }
 
@@ -69,7 +54,8 @@ nav a {
     cursor: pointer;
 }
 
-.hamburger div {
+.hamburger span {
+    display: block;
     width: 25px;
     height: 3px;
     background-color: #FFF;
@@ -80,6 +66,12 @@ nav a {
 main {
     padding: 2%;
     overflow: auto;
+    min-height: 70vh;
+    color: #000;
+    background-image: url(/fall_fy2025/images/simon-berger-twukN12EN7c-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 main p {
@@ -92,8 +84,6 @@ main #notes {
 
 /* Style rules for footer content */
 footer {
-    background-color: #222;
-    color: #fff;
     padding: 40px 20px;
 }
 
