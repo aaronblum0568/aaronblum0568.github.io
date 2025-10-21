@@ -1,0 +1,16 @@
+/* CSS Reset */
+body,
+header,
+nav,
+main,
+footer,
+h2,
+form {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#contact {
+    text-align: center;
+}
