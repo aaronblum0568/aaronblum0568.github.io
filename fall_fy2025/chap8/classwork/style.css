@@ -1,0 +1,94 @@
+/* Base styles */
+#contact {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  color: #333;
+}
+
+form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  font-size: 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Tablet (≥600px) — 2 columns */
+@media (min-width: 600px) {
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-group.full-width {
+    grid-column: 1 / -1;
+  }
+
+  button {
+    width: auto;
+  }
+}
+
+/* Desktop (≥1024px) — larger padding & font */
+@media (min-width: 1024px) {
+  #contact {
+    padding: 40px;
+  }
+
+  #contact h2 {
+    font-size: 2.2em;
+  }
+
+  input,
+  textarea {
+    font-size: 1.1em;
+  }
+
+  button {
+    font-size: 1.1em;
+    padding: 14px 28px;
+  }
+}
