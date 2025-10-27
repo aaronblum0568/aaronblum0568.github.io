@@ -82,6 +82,31 @@ main #notes {
     font-size: 1.5em;
 }
 
+/* Style rules for form elements */
+fieldset,
+input {
+    margin-bottom: 2%;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label {
+    display: block;
+    padding-top: 3%;
+}
+
+form #submit {
+    margin: 0 auto;
+    display: block;
+    padding: 2.2%;
+    color: #cdf;
+    background-color: #44f;
+    font-size: 1em;
+}
+
 /* Style rules for footer content */
 footer {
     padding: 40px 20px;
@@ -251,5 +276,20 @@ print {
         display: block;
         border-left: none;
         border-top: 1px solid #fff;
+    }
+
+    /* Tablet Viewport: Style rule for form element */
+    .form-grid {
+        width: 37.2em;
+        margin: 0 auto;
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 900px),
+print {
+    .form-grid {
+        width: 72%;
+        margin: 0 auto;
     }
 }
