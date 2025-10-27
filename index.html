@@ -30,9 +30,9 @@
 
     <!-- Main Content -->
     <main>
-        <aside id="about">
+        <aside id="about" class="desktop">
             <h1>Welcome to Fan Bool!</h1>
-            <p class="desktop">A fun website dedicated to football fan predictions. By Aaron Blum.</p>
+            <p>A fun website dedicated to football fan predictions. By Aaron Blum.</p>
         </aside>
 
         <!-- Games from Sunday week 8 -->
@@ -43,111 +43,137 @@
                 <span class="desktop">-- Select your Picks</span>
             </h2>
 
-            <section>
-                <div class="matchup">
-                    <figure>
-                        <img src="images/nfl/atlanta-falcons.png" alt="Atlanta Falcons">
-                        <figcaption>
-                            Atlanta
-                            <br>
-                            Falcons (home)
-                            <br>
-                            (3-3) to (3-4)
-                        </figcaption>
-                    </figure>
-                    <h4>will defeat</h4>
-                    <figure>
-                        <img src="images/nfl/miami-dolphins.png" alt="Miami Dolphins">
-                        <figcaption>
-                            Miami
-                            <br>
-                            Dolphins
-                            <br>
-                            (1-6) to (2-6)
-                        </figcaption>
-                    </figure>
-                </div>
-                <ul>
-                    <li>True</li>
-                    <li>False (Correct Answer)</li>
-                </ul>
-            </section>
+            <form id="picks">
+                <section>
+                    <fieldset>
+                        <legend class="matchup">
+                            <figure>
+                                <img src="images/nfl/atlanta-falcons.png" alt="Atlanta Falcons">
+                                <figcaption>
+                                    Atlanta
+                                    <br>
+                                    Falcons (home)
+                                    <br>
+                                    (3-3) to (3-4)
+                                </figcaption>
+                            </figure>
+                            <h4>will defeat</h4>
+                            <figure>
+                                <img src="images/nfl/miami-dolphins.png" alt="Miami Dolphins">
+                                <figcaption>
+                                    Miami
+                                    <br>
+                                    Dolphins
+                                    <br>
+                                    (1-6) to (2-6)
+                                </figcaption>
+                            </figure>
+                        </legend>
+                        <input required type="radio" name="game1" id="game1-true" value="true">
+                        <label class="true" for="game1-true">True</label>
+                        <input required type="radio" name="game1" id="game1-false" value="false">
+                        <label class="false" for="game1-false">False (Correct Answer)</label>
+                    </fieldset>
+                </section>
 
-            <hr>
+                <section>
+                    <fieldset>
+                        <legend class="matchup">
+                            <figure>
+                                <img src="images/nfl/cincinnati-bengals.png" alt="Cincinnati Bengals">
+                                <figcaption>
+                                    Cincinnati
+                                    <br>
+                                    Bengals (home)
+                                    <br>
+                                    (3-4) to (3-5)
+                                </figcaption>
+                            </figure>
+                            <h4>will defeat</h4>
+                            <figure>
+                                <img src="images/nfl/new-york-jets.png" alt="New York Jets">
+                                <figcaption>
+                                    New York
+                                    <br>
+                                    Jets
+                                    <br>
+                                    (0-7) to (1-7)
+                                </figcaption>
+                            </figure>
+                        </legend>
+                        <input required type="radio" name="game2" id="game2-true" value="true">
+                        <label class="true" for="game2-true">True</label>
+                        <input required type="radio" name="game2" id="game2-false" value="false">
+                        <label class="false" for="game2-false">False (Correct Answer)</label>
+                    </fieldset>
+                </section>
 
-            <section>
-                <div class="matchup">
-                    <figure>
-                        <img src="images/nfl/cincinnati-bengals.png" alt="Cincinnati Bengals">
-                        <figcaption>
-                            Cincinnati
-                            <br>
-                            Bengals (home)
-                            <br>
-                            (3-4) to (3-5)
-                        </figcaption>
-                    </figure>
-                    <h4>will defeat</h4>
-                    <figure>
-                        <img src="images/nfl/new-york-jets.png" alt="New York Jets">
-                        <figcaption>
-                            New York
-                            <br>
-                            Jets
-                            <br>
-                            (0-7) to (1-7)
-                        </figcaption>
-                    </figure>
-                </div>
-                <ul>
-                    <li>True</li>
-                    <li>False (Correct Answer)</li>
-                </ul>
-            </section>
+                <section>
+                    <fieldset>
+                        <legend class="matchup">
+                            <figure>
+                                <img src="images/nfl/buffalo-bills.png" alt="Buffalo Bills">
+                                <figcaption>
+                                    Buffalo
+                                    <br>
+                                    Bills
+                                    <br>
+                                    (4-2) to (5-2)
+                                </figcaption>
+                            </figure>
+                            <h4>will defeat</h4>
+                            <figure>
+                                <img src="images/nfl/carolina-panthers.png" alt="Carolina Panthers">
+                                <figcaption>
+                                    Carolina
+                                    <br>
+                                    Panthers (home)
+                                    <br>
+                                    (4-3) to (4-4)
+                                </figcaption>
+                            </figure>
+                        </legend>
+                        <input required type="radio" name="game3" id="game3-true" value="true">
+                        <label class="true" for="game3-true">True (Correct Answer)</label>
+                        <input required type="radio" name="game3" id="game3-false" value="false">
+                        <label class="false" for="game3-false">False</label>
+                    </fieldset>
+                </section>
 
-            <hr>
-
-            <section>
-                <div class="matchup">
-                    <figure>
-                        <img src="images/nfl/buffalo-bills.png" alt="Buffalo Bills">
-                        <figcaption>
-                            Buffalo
-                            <br>
-                            Bills
-                            <br>
-                            (4-2) to (5-2)
-                        </figcaption>
-                    </figure>
-                    <h4>will defeat</h4>
-                    <figure>
-                        <img src="images/nfl/carolina-panthers.png" alt="Carolina Panthers">
-                        <figcaption>
-                            Carolina
-                            <br>
-                            Panthers (home)
-                            <br>
-                            (4-3) to (4-4)
-                        </figcaption>
-                    </figure>
-                </div>
-                <ul>
-                    <li>True (Correct Answer)</li>
-                    <li>False</li>
-                </ul>
-            </section>
-
-            <hr>
+                <input type="submit" id="submit" value="Submit" class="btn">
+                <hr class="tablet">
+            </form>
         </article>
 
         <!-- Example player scores -->
         <article id="leaderboard">
-            <h2>Leaderboard (sample)</h2>
-            <ol>
-                <li>aaronbearon: 192 pts</li>
-                <li>pegapud: 108 pts</li>
-                <li>dragonsinth: 42 pts</li>
-            </ol>
+            <table>
+                <caption>Leaderboard (sample)</caption>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Player</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>aaronbearon</td>
+                        <td>192</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>pegapud</td>
+                        <td>108</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>dragonsinth</td>
+                        <td>42</td>
+                    </tr>
+                </tbody>
+            </table>
         </article>
     </main>
 
