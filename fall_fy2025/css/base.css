@@ -84,27 +84,38 @@ main #notes {
 
 /* Style rules for form elements */
 fieldset,
-input {
-    margin-bottom: 2%;
+input,
+textarea {
+    margin-bottom: 5px;
 }
 
-fieldset legend {
+.contact legend {
     font-weight: bold;
     font-size: 1.25em;
 }
 
-label {
+.contact input,
+textarea {
     display: block;
-    padding-top: 3%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-form #submit {
-    margin: 0 auto;
+.contact label {
     display: block;
-    padding: 2.2%;
-    color: #cdf;
-    background-color: #44f;
-    font-size: 1em;
+}
+
+.contact #submit {
+    margin: 10px 0;
+    width: auto;
+    max-width: 120px;
+    display: block;
+    padding: 5px;
+    color: #44f;
+    border: 1px solid #000;
+    background-color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 /* Style rules for footer content */
@@ -279,16 +290,27 @@ print {
     }
 
     /* Tablet Viewport: Style rule for form element */
-    .form-grid {
+    .contact form {
         width: 37.2em;
         margin: 0 auto;
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px 20px;
+    }
+
+    .contact #submit {
+        margin: 10px auto;
+        grid-column: 1 / span 2;
     }
 }
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 900px),
 print {
-    .form-grid {
+    .contact form {
         width: 72%;
         margin: 0 auto;
     }

@@ -82,19 +82,30 @@
 
         <section id="contact" class="contact">
             <h2>Contact</h2>
-            <form class="form-grid">
+            <form>
                 <fieldset>
                     <legend>Enter your info and we'll be in touch</legend>
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" id="name" autocomplete="name">
 
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" autocomplete="email">
+                    <article class="contact-grid">
+                        <section>
+                            <label for="name">Name:</label>
+                            <input required type="text" name="name" id="name" autocomplete="name">
 
-                    <label for="phone">Phone:</label>
-                    <input type="tel" id="phone" name="phone" autocomplete="tel">
+                            <label for="email">Email:</label>
+                            <input required type="email" name="email" id="email" autocomplete="email">
+
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone" autocomplete="tel">
+                        </section>
+
+                        <section>
+                            <label for="message">Message (optional):</label>
+                            <textarea id="message" name="message" rows="7"></textarea>
+                        </section>
+
+                        <input type="submit" id="submit" value="Submit" class="btn">
+                    </article>
                 </fieldset>
-                <input type="submit" id="submit" value="SUBMIT" class="btn">
             </form>
         </section>
     </main>
