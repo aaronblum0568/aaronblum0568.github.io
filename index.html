@@ -48,7 +48,10 @@
                     <fieldset>
                         <legend class="matchup">
                             <figure>
-                                <img src="images/nfl/atlanta-falcons.png" alt="Atlanta Falcons">
+                                <audio id="falconHorn">
+                                    <source src="media/atlanta-falcons-horn.mp3" type="audio/mp3">
+                                </audio>
+                                <img id="falconImg" src="images/nfl/atlanta-falcons.png" alt="Atlanta Falcons">
                                 <figcaption>
                                     Atlanta
                                     <br>
@@ -146,7 +149,7 @@
         </article>
 
         <!-- Example player scores -->
-        <article id="leaderboard">
+        <div id="leaderboard">
             <table>
                 <caption>Leaderboard (sample)</caption>
                 <thead>
@@ -174,7 +177,7 @@
                     </tr>
                 </tbody>
             </table>
-        </article>
+        </div>
     </main>
 
     <!-- Footer -->
@@ -211,6 +214,19 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const falconHorn = document.getElementById('falconHorn');
+        const falconImg = document.getElementById('falconImg');
+        falconImg.addEventListener('click', function () {
+            if (falconHorn.paused) {
+                falconHorn.play();
+            } else {
+                falconHorn.pause();
+                falconHorn.currentTime = 0;
+            }
+        });
+    </script>
 
 </body>
 

@@ -10,13 +10,13 @@ header,
 nav,
 main,
 footer,
-img,
-h1,
+img h1,
 ul,
 section,
 aside,
 figure,
-figcaption {
+figcaption,
+audio {
     margin: 0;
     padding: 0;
     border: 0;
@@ -30,7 +30,8 @@ body {
 }
 
 /* Style rule for images */
-img {
+img,
+audio {
     max-width: 100%;
     display: block;
 }
