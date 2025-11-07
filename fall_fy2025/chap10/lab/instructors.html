@@ -2,7 +2,7 @@
 <!--
     Student Name: Aaron Blum
     File Name: instructors.html
-    Date: 10/25/25
+    Date: 11/7/25
 -->
 <html lang="en">
 
@@ -23,9 +23,23 @@
 </head>
 
 <body>
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="lessons.html">Lessons</a>
+            <a href="instructors.html">Instructors</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <a class="menu-icon" onclick="hamburger()">
+            <div>&#9776;</div>
+        </a>
+    </nav>
+
     <header>
         <h1><span class="tab-desk">&#9836;</span> Strike a Chord <span class="tab-desk">&#9836;</span></h1>
-        <nav>
+        <nav class="tab-desk">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="lessons.html">Lessons</a></li>
@@ -63,6 +77,8 @@
         <p>&copy; Copyright 2021. All Rights Reserved.</p>
         <p><a href="mailto:lessons@strikeachord.net">lessons@strikeachord.net</a></p>
     </footer>
+
+    <script src="scripts/script.js"></script>
 
 </body>
 
