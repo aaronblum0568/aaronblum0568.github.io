@@ -27,6 +27,19 @@ figcaption {
     border: 0;
 }
 
+#countdown-display {
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 5px;
+    /* Make the text bright white so it stands out against the dark body background (#222) */
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    /* Add a solid background color if necessary to ensure visibility */
+    background-color: #d50a0a;
+    /* Using one of your theme colors (red) */
+}
+
 /* Style rules for body and images */
 body {
     background-color: #222;
