@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/fanbool.css">
     <link rel="icon" type="image/svg+xml" href="images/mini-logo.svg">
     <title>FanBool</title>
+    <script src="scripts/fanbool.js"></script>
 </head>
 
 <body>
@@ -19,10 +20,6 @@
         </a>
     </header>
 
-    <div id="countdown-display">
-        Loading...
-    </div>
-
     <!-- Nav -->
     <nav>
         <ul>
@@ -31,6 +28,10 @@
             <li><a href="./fall_fy2025/">Fall FY2025</a></li>
         </ul>
     </nav>
+
+    <div id="countdown-display">
+        Loading...
+    </div>
 
     <!-- Main Content -->
     <main>
@@ -76,9 +77,9 @@
                                 </figcaption>
                             </figure>
                         </legend>
-                        <input required type="radio" name="game1" id="game1-true" value="true">
+                        <input required type="radio" name="game1" id="game1-true" value="true" disabled>
                         <label class="true" for="game1-true">True</label>
-                        <input required type="radio" name="game1" id="game1-false" value="false">
+                        <input required type="radio" name="game1" id="game1-false" value="false" disabled>
                         <label class="false" for="game1-false">False</label>
                     </fieldset>
                 </section>
@@ -108,9 +109,9 @@
                                 </figcaption>
                             </figure>
                         </legend>
-                        <input required type="radio" name="game2" id="game2-true" value="true">
+                        <input required type="radio" name="game2" id="game2-true" value="true" disabled>
                         <label class="true" for="game2-true">True</label>
-                        <input required type="radio" name="game2" id="game2-false" value="false">
+                        <input required type="radio" name="game2" id="game2-false" value="false" disabled>
                         <label class="false" for="game2-false">False</label>
                     </fieldset>
                 </section>
@@ -140,9 +141,9 @@
                                 </figcaption>
                             </figure>
                         </legend>
-                        <input required type="radio" name="game3" id="game3-true" value="true">
+                        <input required type="radio" name="game3" id="game3-true" value="true" disabled>
                         <label class="true" for="game3-true">True</label>
-                        <input required type="radio" name="game3" id="game3-false" value="false">
+                        <input required type="radio" name="game3" id="game3-false" value="false" disabled>
                         <label class="false" for="game3-false">False</label>
                     </fieldset>
                 </section>
@@ -172,14 +173,14 @@
                                 </figcaption>
                             </figure>
                         </legend>
-                        <input required type="radio" name="game4" id="game4-true" value="true">
+                        <input required type="radio" name="game4" id="game4-true" value="true" disabled>
                         <label class="true" for="game4-true">True</label>
-                        <input required type="radio" name="game4" id="game4-false" value="false">
+                        <input required type="radio" name="game4" id="game4-false" value="false" disabled>
                         <label class="false" for="game4-false">False</label>
                     </fieldset>
                 </section>
 
-                <input type="submit" id="submit" value="Submit" class="btn">
+                <input type="submit" id="submit" value="Submit" class="btn" disabled>
                 <hr class="tablet">
             </form>
         </article>
@@ -250,29 +251,6 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        const falconHorn = document.getElementById('falconHorn');
-        const falconImg = document.getElementById('falconImg');
-        falconImg.addEventListener('click', function () {
-            if (falconHorn.paused) {
-                falconHorn.play();
-            } else {
-                falconHorn.pause();
-                falconHorn.currentTime = 0;
-            }
-        });
-
-        // --- NEW CODE: Wait for the entire HTML to be ready ---
-        document.addEventListener('DOMContentLoaded', function () {
-            // Now we know for sure the 'submit' and 'picks' elements exist
-            startCountdownTimer();
-        });
-        // ----------------------------------------------------
-    </script>
-
-    <script src="scripts/fanboolJS.js"></script>
-
 </body>
 
 </html>

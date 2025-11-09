@@ -30,7 +30,7 @@ figcaption {
 #countdown-display {
     text-align: center;
     padding: 10px 0;
-    margin-bottom: 5px;
+    margin-top: 5px;
     /* Make the text bright white so it stands out against the dark body background (#222) */
     color: #fff;
     font-size: 2em;
@@ -139,6 +139,10 @@ main {
     background-color: #d50a0a;
     border: solid 4px #013369;
     font-size: 1.2em;
+}
+
+#game #submit:disabled {
+    background-color: #aaaaaa;
 }
 
 /*
