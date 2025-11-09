@@ -84,6 +84,21 @@ function startCountdownTimer() {
                     event.preventDefault();
                 });
             }
+
+            // Get the entire form element
+            const formPicks = document.getElementById("picks");
+
+            if (formPicks) {
+                // Select all <input> and <select> elements within the form
+                const formInputs = formPicks.querySelectorAll('input, select, textarea');
+
+                // Loop through the list and disable each one
+                formInputs.forEach(input => {
+                    // We ensure we don't disable other elements if they are present, 
+                    // though for your current form structure, this is safe.
+                    input.disabled = true;
+                });
+            }
         }
     }, 1000); // Interval is set to 1 millisecond
 }
