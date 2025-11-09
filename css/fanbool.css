@@ -143,6 +143,7 @@ main {
 
 #game #submit:disabled {
     background-color: #aaaaaa;
+    opacity: 0.5;
 }
 
 /*
