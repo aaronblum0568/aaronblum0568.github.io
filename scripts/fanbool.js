@@ -4,7 +4,7 @@
     Date: 11/8/2025
 */
 
-const cutoffThisWeek = new Date("2025-11-09T13:30:00Z").getTime();
+const cutoffThisWeek = new Date("2025-11-16T17:00:00Z").getTime();
 
 function onTimer() {
     const durationMs = cutoffThisWeek - Date.now();
@@ -30,11 +30,11 @@ function updateTimer(seconds) {
     seconds -= minutes * secondsInMinute;
     seconds = Math.floor(seconds);
 
-    document.getElementById("countdown-display").textContent = "PICK NOW! " +
+    document.getElementById("countdown-display").textContent = "PICK NOW! within " +
         days + "d : " +
         hours + "h : " +
         minutes + "m : " +
-        seconds + "s";
+        seconds + "s.";
 }
 
 // Enable all the prediction controls.
