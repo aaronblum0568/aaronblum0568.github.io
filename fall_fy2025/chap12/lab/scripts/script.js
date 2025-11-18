@@ -1,15 +1,10 @@
 /*
-    Student Name: Aaron Blum
+    Student Name:
     File Name: script.js
-    Date: 11/7/2025
+    Date: 
 */
 
-//Hamburger menu function
-function hamburger() {
-    var menu = document.getElementById("menu-links");
-    if (menu.style.display === "block") {
-        menu.style.display = "none";
-    } else {
-        menu.style.display = "block";
-    }
-}
+//jQuery for hero image to consume the header window space
+$(document).ready(function(){
+    $('.hero').height($(window).height());
+});
