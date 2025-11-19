@@ -4,7 +4,7 @@
     Date: 11/8/2025
 */
 
-const cutoffThisWeek = new Date("2025-11-16T17:00:00Z").getTime();
+const cutoffThisWeek = new Date("2025-11-23T17:00:00Z").getTime();
 
 function onTimer() {
     const durationMs = cutoffThisWeek - Date.now();
