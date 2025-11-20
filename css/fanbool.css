@@ -325,7 +325,7 @@ print {
         border-top: 1px solid #fff;
     }
 
-    /* Hamburger dropdown positon under hamburger. */
+    /* Hamburger dropdown position under hamburger. */
     #hamburger-content {
         display: none;
         position: absolute;
@@ -341,9 +341,7 @@ print {
     #menu-toggle:checked+#hamburger-content {
         display: block;
     }
-
 }
-
 
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 631px),
