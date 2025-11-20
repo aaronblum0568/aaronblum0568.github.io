@@ -202,7 +202,7 @@ print {
         border-top: 1px solid #fff;
     }
 
-    /* Hamburger dropdown positon under hamburger. */
+    /* Hamburger dropdown position under hamburger. */
     #hamburger-content {
         display: none;
         position: absolute;
@@ -214,7 +214,7 @@ print {
         z-index: 1000;
     }
 
-    /* Crazy rule to show hambuger dropdown. */
+    /* Crazy rule to show hamburger dropdown. */
     #menu-toggle:checked+.hamburger+#hamburger-content {
         display: block;
     }
@@ -235,10 +235,6 @@ print {
 
     .hamburger {
         display: none;
-    }
-
-    #hambuger-content {
-        display: block;
     }
 
     nav a {
