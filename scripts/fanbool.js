@@ -4,7 +4,7 @@
     Date: 11/8/2025
 */
 
-const cutoffThisWeek = new Date("2025-11-23T17:00:00Z").getTime();
+const cutoffThisWeek = new Date('2025-11-23T17:00:00Z').getTime();
 
 function onTimer() {
     const durationMs = cutoffThisWeek - Date.now();
@@ -12,7 +12,7 @@ function onTimer() {
         updateTimer(durationMs / 1000);
         enableForm();
     } else {
-        document.getElementById("countdown-display").textContent = "PREDICTIONS LOCKED";
+        document.getElementById('countdown-timer').textContent = 'PREDICTIONS LOCKED';
     }
 }
 
@@ -30,11 +30,12 @@ function updateTimer(seconds) {
     seconds -= minutes * secondsInMinute;
     seconds = Math.floor(seconds);
 
-    document.getElementById("countdown-display").textContent = "PICK NOW! within " +
-        days + "d : " +
-        hours + "h : " +
-        minutes + "m : " +
-        seconds + "s.";
+    document.getElementById('countdown-title').textContent = 'PICK NOW!';
+    document.getElementById('countdown-timer').textContent =
+        days + 'd : ' +
+        hours + 'h : ' +
+        minutes + 'm : ' +
+        seconds + 's';
 }
 
 // Enable all the prediction controls.
@@ -61,7 +62,11 @@ function setupAudioHandler() {
 
 // Start everything when the file loads
 document.addEventListener('DOMContentLoaded', function () {
-    setupAudioHandler();
-    onTimer(); // render immediately
-    window.setInterval(onTimer, 1000); // recompute countdown every second
+    if (document.getElementById('falconImg')) {
+        setupAudioHandler();
+    }
+    if (document.getElementById('countdown-timer')) {
+        onTimer(); // render immediately
+        window.setInterval(onTimer, 1000); // recompute countdown every second
+    }
 });

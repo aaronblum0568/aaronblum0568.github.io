@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/fanbool.css">
+    <link rel="icon" sizes="any" type="image/svg+xml" href="images/mini-logo.svg">
+    <title>Contact | FanBool</title>
+    <script src="scripts/fanbool.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="/#">
+            <img src="./images/logo.svg" alt="FB logo with B backward followed by FanBool">
+        </a>
+
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </header>
+
+    <!-- Nav -->
+    <nav>
+        <input type="checkbox" id="menu-toggle">
+        <ul id="hamburger-content">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content-page">
+        <aside>
+            <h1>Contact us!</h1>
+            <div>And sign up for notifications.</div>
+        </aside>
+
+        <section class="user-input">
+            <form>
+
+                <fieldset>
+                    <legend>Contact Us</legend>
+                    <label for="fName">First Name:</label>
+                    <input type="text" name="fName" id="fName" required>
+
+                    <label for="lName">Last Name:</label>
+                    <input type="text" name="lName" id="lName" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+
+                    <label for="notify">
+                        <input type="checkbox" name="notify" id="notify">
+                        Notify me each week
+                    </label>
+
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" cols="35"></textarea>
+                </fieldset>
+
+                <input type="submit" id="submit" value="Submit" class="btn">
+                <input type="button" id="reset" value="Reset" class="btn">
+
+            </form>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="bottom">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Menu</h4>
+                <a href="#">Top</a><br>
+                <a href="index.html">Home</a>
+                <a href="history.html">History</a>
+                <a href="login.html">Login</a>
+                <a href="media.html">Media</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Projects</h4>
+                <a href="/fall_fy2025/">Fall FY2025</a>
+            </div>
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <a href="https://playoffstatus.com/nfl/nfl.html" target="_blank">NFL Playoff Status</a><br>
+                <a href="https://www.nfl.com/" target="_blank">NFL.com Official</a><br>
+                <a href="https://www.espn.com/" target="_blank">ESPN.com Official</a>
+            </div>
+            <div class="footer-col social_icon">
+                <h4>Follow Me</h4>
+                <span>
+                    <a href="https://www.facebook.com/aaron.blum.7509" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://github.com/aaronblum0568/" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/aaron-blum-b38143386/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

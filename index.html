@@ -7,8 +7,8 @@
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="/css/fanbool.css">
-    <link rel="icon" type="image/svg+xml" href="images/mini-logo.svg">
-    <title>FanBool</title>
+    <link rel="icon" sizes="any" type="image/svg+xml" href="images/mini-logo.svg">
+    <title>Home | FanBool</title>
     <script src="scripts/fanbool.js"></script>
 </head>
 
@@ -30,9 +30,9 @@
     <nav>
         <input type="checkbox" id="menu-toggle">
         <ul id="hamburger-content">
-            <li><a href="login.html">Login</a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="history.html">History</a></li>
+            <li><a href="login.html">Login</a></li>
             <li><a href="media.html">Media</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -40,11 +40,12 @@
     </nav>
 
     <div id="countdown-display">
-        Loading...
+        <span id="countdown-title" class="desktop"></span>
+        <span id="countdown-timer">Loading...</span>
     </div>
 
     <!-- Main Content -->
-    <main>
+    <main class="game-grid">
         <aside id="about" class="desktop">
             <h1>Welcome to Fan Bool!</h1>
             <p>A fun website dedicated to football fan predictions. By Aaron Blum.</p>
@@ -201,9 +202,9 @@
             <div class="footer-col">
                 <h4>Menu</h4>
                 <a href="#">Top</a><br>
-                <a href="login.html">Login</a>
                 <a href="index.html">Home</a>
                 <a href="history.html">History</a>
+                <a href="login.html">Login</a>
                 <a href="media.html">Media</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>

@@ -7,8 +7,8 @@
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="/css/fanbool.css">
-    <link rel="icon" type="image/svg+xml" href="images/mini-logo.svg">
-    <title>FanBool</title>
+    <link rel="icon" sizes="any" type="image/svg+xml" href="images/mini-logo.svg">
+    <title>Login | FanBool</title>
     <script src="scripts/fanbool.js"></script>
 </head>
 
@@ -30,125 +30,40 @@
     <nav>
         <input type="checkbox" id="menu-toggle">
         <ul id="hamburger-content">
-            <li><a href="login.html">Login</a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="history.html">History</a></li>
+            <li><a href="login.html">Login</a></li>
             <li><a href="media.html">Media</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
+
         </ul>
     </nav>
 
     <!-- Main Content -->
-    <main>
-        <aside id="about" class="desktop">
-            <h1>Login Page!</h1>
-            <p>Fill out the form to make your predictions count.</p>
+    <main class="content-page">
+        <aside>
+            <h1>Login</h1>
+            <div>To play the game and keep score</div>
         </aside>
 
-        <form class="form-grid"> <!-- Start Form -->
+        <section class="user-input">
+            <form>
+                <fieldset>
+                    <legend>Login</legend>
+                    <label for="userName">Username:</label>
+                    <input type="text" name="userName" id="userName">
 
-            <fieldset>
-                <legend>Customer Information</legend>
-                <label for="fName">First Name:</label>
-                <input type="text" name="fName" id="fName" required>
-
-                <label for="lName">Last Name:</label>
-                <input type="text" name="lName" id="lName" required>
-
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required>
-
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" required>
-            </fieldset>
-
-            <fieldset>
-                <legend>Additional Information</legend>
-                <p>I would like more information about:</p>
-
-                <label for="grpfit"><input type="checkbox" name="interest" id="grpfit" value="Bye Weeks">Bye
-                    Weeks</label>
-
-                <label for="prtrain"><input type="checkbox" name="interest" id="prtrain" value="Playoff Picture">Playoff
-                    Picture</label>
-
-                <label for="nutr"><input type="checkbox" name="interest" id="nutr"
-                        value="Tiebreakers">Tiebreakers</label>
-            </fieldset>
-
-            <fieldset>
-                <legend>Referral Source</legend>
-                <label for="reference">How did you find us?</label>
-                <select name="reference" id="reference">
-                    <option value="ad">Advertisement</option>
-                    <option value="friend">Friend</option>
-                    <option value="google">Google</option>
-                    <option value="social">Social Media</option>
-                    <option value="other">Other</option>
-                </select>
-
-                <label for="questions"> Questions?</label>
-                <textarea id="questions" name="questions" rows="5" cols="35"></textarea>
-            </fieldset>
-
-            <input type="submit" id="submit" value="Submit" class="btn">
-
-        </form>
-
-        <form class="form-grid"><!-- Start Form -->
-
-            <fieldset>
-                <legend>Login Information</legend>
-                <label for="fName">First Name:</label>
-                <input type="text" name="fName" id="fName">
-
-                <label for="lName">Last Name:</label>
-                <input type="text" name="lName" id="lName">
-
-                <label for="userName">Username:</label>
-                <input type="text" name="userName" id="userName">
-
-                <label for="password">Password:</label>
-                <input type="text" name="password" id="password">
-
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email">
-
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone">
-            </fieldset>
-
-            <input type="submit" id="submit" value="Submit" class="btn">
-
-        </form>
-
-        <form>
-            <fieldset>
-                <legend>Enter your info and we'll be in touch</legend>
-
-                <div class="contact-grid">
-                    <div>
-                        <label for="name">Name:</label>
-                        <input required type="text" name="name" id="name" autocomplete="name">
-
-                        <label for="email">Email:</label>
-                        <input required type="email" name="email" id="email" autocomplete="email">
-
-                        <label for="phone">Phone:</label>
-                        <input type="tel" id="phone" name="phone" autocomplete="tel">
-                    </div>
-
-                    <div>
-                        <label for="message">Message (optional):</label>
-                        <textarea id="message" name="message" rows="7"></textarea>
-                    </div>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password">
 
                     <input type="submit" id="submit" value="Submit" class="btn">
-                </div>
-            </fieldset>
-        </form>
+                </fieldset>
+            </form>
+
+        </section>
     </main>
+
 
     <!-- Footer -->
     <footer id="bottom">
@@ -156,9 +71,9 @@
             <div class="footer-col">
                 <h4>Menu</h4>
                 <a href="#">Top</a><br>
-                <a href="login.html">Login</a>
                 <a href="index.html">Home</a>
                 <a href="history.html">History</a>
+                <a href="login.html">Login</a>
                 <a href="media.html">Media</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
